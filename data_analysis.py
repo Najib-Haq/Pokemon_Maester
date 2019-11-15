@@ -4,7 +4,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
+types = ['Grass', 'Dark', 'Rock', 'Fighting', 'Psychic', 'Dragon', 'Water', 'Bug', 'Electric', 'Ice', 'Ghost', 'Ground', 'Steel', 'Fire', 'Flying', 'Normal', 'Poison', 'Fairy']
+colors = ['lime', 'darkslateblue', 'silver', 'olive', 'gold', 'purple', 'cornflowerblue', 'lawngreen','yellow','skyblue','black','peru','dimgrey','orangered','azure','tan','magenta','pink']
 
+color_dict = {}
+for i in range(len(types)):
+    color_dict[types[i]] = colors[i]
 
 def add_to_dict(dict, key):
     if not pd.isnull(key):
@@ -12,6 +17,22 @@ def add_to_dict(dict, key):
             dict[key] = dict[key] + 1
         else:
             dict[key] = 1
+
+
+def add_dict_to_dict(dict, key1, key2):
+    if pd.isnull(key1) or pd.isnull(key2):
+        return
+    else:
+        if key1 in dict.keys():
+            if key2 in dict[key1].keys():
+                dict[key1][key2] += 1
+            else:
+                dict[key1][key2] = 1
+        else:
+            dict[key1] = {key2:1}
+
+
+
 
 
 def get_max3(dict):
@@ -165,5 +186,71 @@ for key in types_combats.keys():
 # plt.title("Percentage of winner ratio list by type")
 # plt.savefig("Analysis/winning_ratio_pie.png", bbox_inches = 'tight')
 # plt.show()
+
+
+# type_advantage = {}
+# type_disadvantage = {}
+# for i in range(len(df)):
+#     if i % 1000 == 0:
+#         print(str(i)+"/"+str(len(df)) + " done.")
+#     winner_t1 = df_pok.iloc[df.iloc[i]['Winner'] - 1]['Type 1']
+#     winner_t2 = df_pok.iloc[df.iloc[i]['Winner'] - 1]['Type 2']
+#     if df.iloc[i]['Winner'] == df.iloc[i]['First_pokemon']:
+#         loser_t1 = df_pok.iloc[df.iloc[i]['Second_pokemon']-1]['Type 1']
+#         loser_t2 = df_pok.iloc[df.iloc[i]['Second_pokemon'] - 1]['Type 2']
+#     else:
+#         loser_t1 = df_pok.iloc[df.iloc[i]['First_pokemon'] - 1]['Type 1']
+#         loser_t2 = df_pok.iloc[df.iloc[i]['First_pokemon'] - 1]['Type 2']
+#
+#     add_dict_to_dict(type_advantage, winner_t1, loser_t1)
+#     #add_dict_to_dict(type_advantage, winner_t1, loser_t2)
+#     #add_dict_to_dict(type_advantage, winner_t2, loser_t1)
+#     #add_dict_to_dict(type_advantage, winner_t2, loser_t2)
+#
+#     add_dict_to_dict(type_disadvantage, loser_t1, winner_t1)
+#     #add_dict_to_dict(type_disadvantage, loser_t2, winner_t1)
+#     #add_dict_to_dict(type_disadvantage, loser_t1, winner_t2)
+#     #add_dict_to_dict(type_disadvantage, loser_t2, winner_t2)
+#
+# lsd.save_dict(type_advantage, 'type_advantage')
+# lsd.save_dict(type_disadvantage, 'type_disadvantage')
+
+
+
+type_advantage = lsd.load_dict('type_advantage')
+type_disadvantage = lsd.load_dict('type_disadvantage')
+for i in type_disadvantage.keys():
+    for j in types:
+        if j not in type_disadvantage[i].keys():
+            type_disadvantage[i][j] = 0
+
+type_superiority = {}
+for i in type_advantage.keys():
+    type_superiority[i] = {}
+    for j in type_advantage[i].keys():
+        winning = type_advantage[i][j]
+        total = type_advantage[i][j] + type_disadvantage[i][j]
+        type_superiority[i][j] = (winning/total)*100
+
+# for i in type_superiority.keys():
+#     plt.figure()
+#     type = []
+#     vals = []
+#     colors = []
+#     for j in sorted(type_superiority[i], key=lambda k: type_superiority[i][k]):
+#         type.append(j)
+#         vals.append(type_superiority[i][j])
+#         colors.append(color_dict[j])
+#     plt.bar(type, vals, color=colors)
+#     plt.title(str(i) + " type winnings")
+#     plt.xticks(rotation=50)
+#     plt.savefig("Analysis/Type_advantage/" + str(i)+" type.png", bbox_inches = 'tight')
+#     plt.show()
+
+
+
+
+
+
 
 

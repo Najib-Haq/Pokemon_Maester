@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60703f93-be2b-45c8-b667-a21746487c87" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Battle.png" beforeDir="false" afterPath="$PROJECT_DIR$/Battle.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_analysis.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,25 +14,27 @@
     <SUITE FILE_PATH="coverage/Pokemon_Master$get_image.coverage" NAME="get_image Coverage Results" MODIFIED="1573761026511" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pokemon_Maester$get_image.coverage" NAME="get_image Coverage Results" MODIFIED="1573833390416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Pokemon_Maester$loading_saving_dictionaries.coverage" NAME="loading_saving_dictionaries Coverage Results" MODIFIED="1573831737890" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Pokemon_Maester$data_analysis.coverage" NAME="data_analysis Coverage Results" MODIFIED="1573843475806" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Pokemon_Maester$data_analysis.coverage" NAME="data_analysis Coverage Results" MODIFIED="1573853715629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-580288711">
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2772" />
+          <entry key="Python Console" value="132" />
+          <entry key="py" value="4757" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="2772" />
+          <entry key="Python" value="4889" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.opened" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -54,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/get_image.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="551">
               <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
@@ -81,18 +81,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_analysis.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+            <state relative-caret-position="560">
+              <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
-                <element signature="e#300#370#0" />
-                <element signature="e#758#769#0" />
-                <element signature="e#1188#1198#0" />
+                <element signature="e#1597#1607#0" />
                 <element signature="e#2096#2098#0" />
-                <element signature="e#2336#2346#0" />
+                <element signature="e#2728#2738#0" />
                 <element signature="e#4110#4120#0" />
                 <element signature="e#4839#4853#0" />
-                <marker date="1573843793053" expanded="true" signature="324:548" ph="..." />
+                <marker date="1573853979097" expanded="true" signature="792:1081" ph="..." />
+                <marker date="1573853979097" expanded="true" signature="1100:1324" ph="..." />
               </folding>
             </state>
           </provider>
@@ -298,7 +297,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5829787" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5858156" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,7 +320,7 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.5829787" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3503546" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -346,6 +345,21 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/get_image.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <marker date="1573829848456" expanded="true" signature="701:1028" ph="..." />
+            <marker date="1573829848456" expanded="true" signature="1059:1064" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/loading_saving_dictionaries.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
@@ -357,35 +371,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/get_image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <marker date="1573829848456" expanded="true" signature="701:1028" ph="..." />
-            <marker date="1573829848456" expanded="true" signature="1059:1064" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Anaconda3/Lib/site-packages/matplotlib/pyplot.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_analysis.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="10" column="30" lean-forward="true" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        <state relative-caret-position="560">
+          <caret line="249" lean-forward="true" selection-start-line="249" selection-end-line="249" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
-            <element signature="e#300#370#0" />
-            <element signature="e#758#769#0" />
-            <element signature="e#1188#1198#0" />
+            <element signature="e#1597#1607#0" />
             <element signature="e#2096#2098#0" />
-            <element signature="e#2336#2346#0" />
+            <element signature="e#2728#2738#0" />
             <element signature="e#4110#4120#0" />
             <element signature="e#4839#4853#0" />
-            <marker date="1573843793053" expanded="true" signature="324:548" ph="..." />
+            <marker date="1573853979097" expanded="true" signature="792:1081" ph="..." />
+            <marker date="1573853979097" expanded="true" signature="1100:1324" ph="..." />
           </folding>
         </state>
       </provider>
