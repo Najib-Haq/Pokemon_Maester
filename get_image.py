@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 import matplotlib.pyplot as plt
 
 
+
 def get_image(name):
     url = "https://bulbapedia.bulbagarden.net/wiki/" + name + "_(Pok%C3%A9mon)"
     print("Going to : " + str(url))
