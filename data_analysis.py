@@ -33,5 +33,5 @@ gm.show(pokemon1, pokemon2, winner)
 #
 # print(count)
 
-
+# TODO : data analysis
 
