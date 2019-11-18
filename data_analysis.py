@@ -247,6 +247,54 @@ for i in type_advantage.keys():
 #     plt.savefig("Analysis/Type_advantage/" + str(i)+" type.png", bbox_inches = 'tight')
 #     plt.show()
 
+######## CORRELATION MATRIX #############
+
+# print(type_advantage['Fighting'].keys())
+# print(type_disadvantage['Fighting'].keys())
+# print(type_superiority['Fighting'].keys())
+
+list2d = []
+for type in types:
+    list_type = []
+    for against_type in types:
+        try:
+            list_type.append(type_superiority[type][against_type])
+        except:
+            type_superiority[type][against_type] = 0
+            list_type.append(type_superiority[type][against_type])
+    list2d.append(list_type)
+
+
+data_2d = np.array(list2d)
+plt.figure()
+fig, ax = plt.subplots()
+image = ax.imshow(data_2d)
+
+cbar = ax.figure.colorbar(image, ax=ax)
+cbar.ax.set_ylabel("Winning percentage", rotation=-90, va="bottom")
+ax.set_xticks(np.arange(len(types)))
+ax.set_yticks(np.arange(len(types)))
+ax.set_xticklabels(types)
+ax.set_yticklabels(types)
+plt.setp(ax.get_xticklabels(), rotation=45, ha = 'right', rotation_mode = 'anchor')
+#write the data
+# for i in range(len(types)):
+#     for j in range(len(types)):
+#         text = ax.text(j,i,list2d[i][j], ha='center', va='center', color='w')
+
+ax.set_title("Winning percentage relation by type")
+# fig.tight_layout()
+plt.savefig("Analysis/Correlation graph.png", bbox_inches = 'tight')
+plt.show()
+
+
+
+
+
+
+
+
+
 
 
 
