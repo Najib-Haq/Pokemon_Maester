@@ -9,15 +9,17 @@ index2name = lsd.load_dict("index2name")
 df_pokemon = pd.read_csv('Dataset/pokemon_ohe.csv')
 df_combats = pd.read_csv('Dataset/combats.csv')
 df_combats['Winner_index'] = df_combats['Winner']==df_combats['First_pokemon']
+
 ############################TRAINING MODEL###################################
 # print("Training Part commencing : ")
 # rf_classifier = rfc.RFC(df_pokemon, df_combats, len(df_combats))
 # rf_classifier.train()
 #
 # lsd.save_dict(rf_classifier, "classifier")
+#############################################################################
+
 
 rf_classifier = lsd.load_dict("classifier")
-
 
 print("Testing Part commencing : ")
 while True:
