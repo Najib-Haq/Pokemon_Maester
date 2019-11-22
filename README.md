@@ -1,5 +1,5 @@
 # POKEMON MAESTER
-Input two pokemon and get which is the likeliest to win. <br>
+An application for predicting the likeliest winner between two pokemon. Can be used to settle which pokemon should be used in a battle. <br>
 
 # Data
 The data used for this project was collection from <a href = 'https://www.kaggle.com/terminus7/pokemon-challenge'> here. </a> <br>
@@ -38,8 +38,8 @@ Random Forest Classifier was used as the classification algorithm. The intuition
 # Usage
 Upon executing the ![main.py](main.py) file, the user will be asked for two pokemon names. The one who will attack first should be given first. This program will output an image depicting both pokemon and having the winner's name in the title. For example: if one enteres Charizard as pokemon 1 and Venusaur as pokemon 2 then the output will be : <br><br>
 <img src="Battle.png" width="700"><br><br>
-The images are obtained via web scraping from https://bulbapedia.bulbagarden.net .
+The pokemon images are obtained via web scraping from https://bulbapedia.bulbagarden.net .
 
-
-
-
+<br>
+### Disclaimer
+As the dataset isn't an accurate represenation of the game mechanics and also various aspects such as Levels, Moves aren't considered, the output of this program might contain flaws. Proceed with caution. 
