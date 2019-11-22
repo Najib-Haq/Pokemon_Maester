@@ -40,6 +40,6 @@ Upon executing the ![main.py](main.py) file, the user will be asked for two poke
 <img src="Battle.png" width="700"><br><br>
 The pokemon images are obtained via web scraping from https://bulbapedia.bulbagarden.net .
 
-<br>
+<br><br>
 ### Disclaimer
 As the dataset isn't an accurate represenation of the game mechanics and also various aspects such as Levels, Moves aren't considered, the output of this program might contain flaws. Proceed with caution. 
